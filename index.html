@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Custom Video Player</title>
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  >
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/progress.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <h1>Custom Video Player</h1>
+
+ <!-- Video Screen with Center Play Button -->
+<div class="video-container">
+
+  <video
+    id="video"
+    class="screen"
+    src="video/gone.mp4">
+  </video>
+
+  <button id="center-play" class="center-play" aria-label="Play video">
+    <i class="fa fa-play"></i>
+  </button>
+
+</div>
+
+  <!-- Video Controls -->
+  <div class="controls">
+
+    <!-- Play Button -->
+    <button class="btn" id="play">
+      <i class="fa fa-play fa-2x"></i>
+    </button>
+
+    <!-- Stop Button -->
+    <button class="btn" id="stop">
+      <i class="fa fa-stop fa-2x"></i>
+    </button>
+
+    <!-- Progress Bar -->
+    <input
+      type="range"
+      id="progress"
+      class="progress"
+      min="0"
+      max="100"
+      step="0.1"
+      value="0"
+    >
+
+    <!-- Timestamp -->
+    <span class="timestamp" id="timestamp">
+      00:00
+    </span>
+
+  </div>
+
+</body>
+</html>
